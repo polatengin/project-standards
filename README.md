@@ -1,2 +1,11 @@
-# project-standards
+# Project Standards
+
 Opinionated standards for projects, such as, Naming Conventions, Best Practices, etc.
+
+[Naming conventions for Azure resources](Naming-Conventions-Azure-Resources.md)
+
+[Tagging Best Practices](Tagging-Best-Practices.md)
+
+[Bash scripting conventions](Bash-Scripting-Conventions.md)
+
+[Terraform - ARM Template - Azure CLI Comparison](Terraform-ARMTemplate-AzureCLI-Comparison.md)
