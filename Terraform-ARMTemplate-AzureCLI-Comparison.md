@@ -1,8 +1,8 @@
-# _Terraform_ - ARM Template - Azure CLI Comparison
+# Terraform - ARM Template - Azure CLI Comparison
 
 Here is the opinianated list of differences of resource provisioning tools
 
-## _Terraform_
+## Terraform
 
 You can get _Terraform_ from https://www.terraform.io/downloads.html
 
