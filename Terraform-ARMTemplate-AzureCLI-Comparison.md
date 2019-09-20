@@ -63,3 +63,9 @@ You can download _Azure CLI_ from https://docs.microsoft.com/cli/azure/install-a
 * I couldn't find anything 😉
 
 ## References
+
+https://www.terraform.io/intro/index.html
+
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates
+
+https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest
