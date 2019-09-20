@@ -16,9 +16,9 @@ Recommended pattern for naming subscriptions is:
 
 {Company} {Department (optional)} {Product Line (optional)} {Environment}
 
-Inditex IT AnalyticalSandboxes Production
+Contoso IT AnalyticalSandboxes Production
 
-Inditex IT ERP Staging
+Contoso IT ERP Staging
 
 ## Resource Types
 
@@ -40,19 +40,19 @@ Here is the naming conventions for resource types
 
 {app_name}-{source-slot-name}
 
-*inditex-staging*
+*contoso-staging*
 
 **API Management**
 
 {apim-service-name}-apim
 
-*inditex-apim*
+*contoso-apim*
 
 **Key Vault**
 
 {service short name}-{environment}-kv
 
-*inditex-prod-kv*
+*contoso-prod-kv*
 
 **Virtual Machine**
 
