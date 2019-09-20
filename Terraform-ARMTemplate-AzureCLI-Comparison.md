@@ -36,15 +36,19 @@ _ARM Templates_ are actually _JSON_ formatted documents
 
 ### Pros
 
-* _ARM Templates_ are behind almost every deployment scenario to Azure (Azure CLI and PowerShell Modules use it behind the scenes)
+* _ARM Templates_ are behind almost every deployment scenario to _Azure_ (_Azure CLI_ and _PowerShell Modules_ use it behind the scenes)
 
 * Every _ARM Template_ deployment is idempotent
 
 ### Cons
 
+* It's hard to create _ARM Template_ files
+
 * _JSON_ files are not best in terms of readibility and maintainability
 
 * _JSON_ files can't have comments, so it's not easy to explain why some piece of JSON is there
+
+* Not everthing can be provisioned/configured via _ARM Templates_
 
 ## Azure CLI
 
@@ -60,7 +64,9 @@ You can download _Azure CLI_ from https://docs.microsoft.com/cli/azure/install-a
 
 ### Cons
 
-* I couldn't find anything 😉
+* You have to manage resource dependencies (create _Virtual Network_ first then the _Virtual Gateway_)
+
+* It's hard to have syntax check and validation of the scripts
 
 ## References
 
