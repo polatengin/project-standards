@@ -4,34 +4,34 @@ Here is the opinionated conventions for Bash Scripts
 
 ## Naming variables
 
-All variables should be in ALLCAPS format, without and special character, eg. dash(-), underscore(_) etc.
+All variables should be in _ALLCAPS_ format, it shouldn't have any special character, eg. dash(-), underscore(_) etc.
 
 ```bash
 USER=`echo whoami`
 LISTOFFILES=`echo ls -la`
 ```
 
-_Benefit of having this naming convention helps to notice all the variables in a Bash script file._
+_Benefit of having this naming convention helps to notice all the variables in a Bash script file at a first glance._
 
-## Bash specific syntax
+## Bash specific syntaxes
 
-Almost every Linux distro comes with Bash out-of-the-box.
+Almost every Linux distro comes with _Bash_ out-of-the-box.
 
-So, it's _almost_ reliable to use Bash specific syntax, such as, conditions, loops, etc.
+So, it's _almost_ reliable to use _Bash_ specific syntaxes, such as, conditions, loops, etc.
 
-We can use Bash specific syntax on Azure DevOps Pipelines for example, because every Hosted Agents comes with Bash installed on it.
+We can use _Bash_ specific syntaxes on _Azure DevOps Pipelines_ for example, because every _Hosted Agents_ comes with _Bash_ installed on it.
 
-But, in case of deploying Bash scripts in a Docker Container, we can't rely on Bash.
+But, in case of deploying _Bash_ scripts in a Docker Container, we can't rely on _Bash_.
 
-Ubuntu, CentOS, Debian, etc. Docker images have Bash, but more minimal Docker images doesn't, such as, Alpine.
+_Ubuntu_, _CentOS_, _Debian_, etc. Docker images have _Bash_, but more minimal Docker images doesn't, such as, _Alpine_.
 
-Either we build from Ubuntu, CentOS or Debian Docker image (around 600MB) with Bash, or we can build from Alpine Docker image (around 6MB)
+Either we build from _Ubuntu_, _CentOS_ or _Debian_ based Docker image (_around 600MB_) with _Bash_, or we can build from _Alpine Docker_ image (_around 6MB_)
 
-Unfortunately, we can't use Bash specific syntax on Alpine Docker images, because it's not pre-installed on the image.
+Unfortunately, we can't use _Bash_ specific syntaxes on _Alpine Docker_ images, because it's not pre-installed on the image.
 
 ## Function usage
 
-All the scripts should developed in DRY principle, so if part of the script can be reused in somewhere else, it should be extracted as a function and called in multiple places.
+All the scripts should developed in _DRY_ principle, so if part of the script can be reused in somewhere else, it should be extracted as a function and called in multiple places.
 
 ```bash
 function doit()
@@ -45,13 +45,13 @@ echo DoIt again
 doit
 ```
 
-In Bash, you can't call a function which is not declared yet, so, just in case, all the functions should be placed on top of the script files.
+In _Bash_, you can't call a function which is not declared yet, so, just in case, all the functions should be placed on top of the script files.
 
-In Bash, you can write function definition and body in single line, but it should be avoided because of viewing all the lines at a glance.
+In _Bash_, you can write function definition and body in single line, but it should be avoided because of viewing all the lines at a glance.
 
-If you need to return a value from a Bash function, do it at the very bottom line of the function.
+If you need to return a value from a _Bash_ function, do it at the very bottom line of the function.
 
-According to Bash language documentation, we can only return single numerical value from a function.
+According to _Bash_ language documentation, we can only return single numerical value from a function.
 
 ```bash
 function sum()
@@ -96,7 +96,7 @@ function sum()
 
 # Parameters
 
-If a Bash script requires parameters to run, always check if those parameters are set.
+If a _Bash_ script requires parameters to run, always check if those parameters are set.
 
 ```bash
 if [ -n "$1" ]; then
@@ -135,25 +135,25 @@ rm -rf
 
 ## Debugging
 
-To perform a syntax check/dry run of your bash script run:
+To perform a syntax check and dry run of your bash script, use `-n` argument:
 
 ```bash
 bash -n myscript.sh
 ```
 
-To produce a trace of every command executed run:
+To produce a trace of every command executed, use `-v` argument:
 
 ```bash
 bash -v myscripts.sh
 ```
 
-To produce a trace of the expanded command use:
+To produce a trace of the command, use `-x` argument:
 
 ```bash
 bash -x myscript.sh
 ```
 
--v and -x can also be made permanent by adding `set -o verbose` and `set -o xtrace` to the script prolog. This might be useful if the script is run on a remote machine, e.g. a build-bot and you are logging the output for remote inspection.
+`-v` and `-x` can also be made permanent by adding `set -o verbose` and `set -o xtrace` to the script prolog. This might be useful if the script is run on a remote machine, e.g. a build-bot and you are logging the output for remote inspection.
 
 ## References
 
