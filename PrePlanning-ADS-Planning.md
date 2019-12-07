@@ -97,3 +97,8 @@ Discus the coordinator and integrator of the tasks
 
 Discus what is in-scope and out-of-the-scope of the project, so all the team members will be on the same page about what is going to be built
 
+## Planning
+
+Walk through all the User Stories (Title and Description) and added Acceptance Criteria in each of them
+
+Add Related/Predecessor links to the needed items
