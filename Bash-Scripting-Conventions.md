@@ -145,6 +145,14 @@ rm --recursive --force
 rm -rf
 ```
 
+## Parallel execution
+
+This will run the given command and keep it running, even after the terminal or SSH connection is terminated. All output is ignored.
+
+```bash
+(nohup "$@" &>/dev/null &)
+```
+
 ## Debugging
 
 To perform a syntax check and dry run of your bash script, use `-n` argument:
