@@ -50,8 +50,7 @@ function do_something() {
 All the scripts should developed in _DRY_ principle, so if part of the script can be reused in somewhere else, it should be extracted as a function and called in multiple places.
 
 ```bash
-function doit()
-{
+doit() {
 
 }
 
@@ -70,8 +69,7 @@ If you need to return a value from a _Bash_ function, do it at the very bottom l
 According to _Bash_ language documentation, we can only return single numerical value from a function.
 
 ```bash
-function sum()
-{
+sum() {
     return $1 + $2
 }
 
@@ -83,8 +81,7 @@ Most of the cases it's not enough to return only one value out from the function
 In that cases, echo a JSON payload to the console only at 1 point in the function and consume it at the caller site.
 
 ```bash
-function sum()
-{
+sum() {
     echo `{ "sum": $1 + $2, "avg": (($1 + $2)/2) }`
 }
 
@@ -103,8 +100,7 @@ Since `exit` keyword terminates the script execution, it's best to use `return` 
 Prefer local variables within functions over global variables, so always declare variables in a function with `local` keyword
 
 ```bash
-function sum()
-{
+sum() {
     local SUM=$1 + $2
     return $SUM
 }
