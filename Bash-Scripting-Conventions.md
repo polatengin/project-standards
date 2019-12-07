@@ -2,6 +2,16 @@
 
 Here is the opinionated conventions for Bash Scripts
 
+## Bash script file
+
+Use `#!/usr/bin/env bash` instead of `#!/bin/bash`
+
+The former searches the user's _PATH_ to find the bash binary.
+
+The latter assumes it is always installed to `/bin/` folder which can cause issues.
+
+_NOTE: There are times when one may have a good reason for using `#!/bin/bash` or another direct path to the binary_
+
 ## Naming variables
 
 All variables should be in _ALLCAPS_ format, it shouldn't have any special character except underscore `( _ )` to improve readability, eg. dash(-), plus(+) etc.
