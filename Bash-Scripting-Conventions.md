@@ -8,7 +8,7 @@ All variables should be in _ALLCAPS_ format, it shouldn't have any special chara
 
 ```bash
 USER=`echo whoami`
-LISTOFFILES=`echo ls -la`
+LIST_OF_FILES=`echo ls -la`
 ```
 
 _Benefit of having this naming convention helps to notice all the variables in a Bash script file at a first glance._
