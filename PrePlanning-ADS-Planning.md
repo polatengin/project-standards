@@ -83,3 +83,17 @@ Responsible for managing ML/DS Pipelines
 
 * Prioritize and order clusters and user stories in them
 
+## ADS
+
+Walk through requirements and facts (limitations that we can't change)
+
+Start to draw the flow of the tasks
+
+Discus the input, output and the data scheme of the tasks
+
+Discus the pipeline and technologies we can implement such a task in the workflow
+
+Discus the coordinator and integrator of the tasks
+
+Discus what is in-scope and out-of-the-scope of the project, so all the team members will be on the same page about what is going to be built
+
