@@ -98,7 +98,7 @@ sum() {
 RESULT=`echo sum 1 3`
 ```
 
-Afterwards, we can use JQ shell extension tp parse JSON payload
+Afterwards, we can use [jq](https://stedolan.github.io/jq/) shell extension to parse JSON payload
 
 ```bash
 SUM=$RESULT | jq '.sum'
