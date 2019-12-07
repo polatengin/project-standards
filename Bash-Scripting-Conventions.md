@@ -166,3 +166,5 @@ http://www.tldp.org/LDP/abs/html/
 https://www.gnu.org/software/bash/manual/bashref.html
 
 https://www.ibm.com/developerworks/library/l-linux-shells/
+
+https://github.com/dylanaraps/pure-bash-bible
