@@ -29,7 +29,23 @@ Either we build from _Ubuntu_, _CentOS_ or _Debian_ based Docker image (_around 
 
 Unfortunately, we can't use _Bash_ specific syntaxes on _Alpine Docker_ images, because it's not pre-installed on the image.
 
-## Function usage
+## Function declaration and usage
+
+_Always_ avoid using the `function` keyword, it reduces compatibility with older versions of bash.
+
+Use
+
+```bash
+do_something() {
+}
+```
+
+Instead of
+
+```bash
+function do_something() {
+}
+```
 
 All the scripts should developed in _DRY_ principle, so if part of the script can be reused in somewhere else, it should be extracted as a function and called in multiple places.
 
