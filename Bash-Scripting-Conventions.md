@@ -165,6 +165,8 @@ This will run the given command and keep it running, even after the terminal or 
 
 ## Debugging
 
+_Use [ShellCheck](https://www.shellcheck.net/) tool to find bugs in shell script_
+
 To perform a syntax check and dry run of your bash script, use `-n` argument:
 
 ```bash
