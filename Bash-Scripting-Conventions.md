@@ -4,7 +4,7 @@ Here is the opinionated conventions for Bash Scripts
 
 ## Naming variables
 
-All variables should be in _ALLCAPS_ format, it shouldn't have any special character, eg. dash(-), underscore(_) etc.
+All variables should be in _ALLCAPS_ format, it shouldn't have any special character except underscore `( _ )` to improve readability, eg. dash(-), plus(+) etc.
 
 ```bash
 USER=`echo whoami`
