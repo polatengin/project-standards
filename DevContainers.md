@@ -102,3 +102,11 @@ Other than above nodes, we may include following nodes as-well;
 
 You can find other available properties in the full [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)
 
+## Summary
+
+Using [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack helps to keep development machine clean, also it helps to onboard new people to the project easier.
+
+DevContainer also allows all contributors to work on the project in a standardised environment.
+
+Contributors require less time and guidance to configure their machine for the project, and configuration of the machine causes fewer issues.
+
