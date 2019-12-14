@@ -39,3 +39,16 @@ This is another problematic area, conflicts between team members' machines.
 To overcome this problem, we may have a clean development machine, with only Docker, Visual Studio Code and [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack.
 
 Basically, we're using Dockerfile to define our development environment for a project and develop the project inside of this development environment. So, every team member spends only a couple of minutes to build the Docker Image on his/her machine. After that, we can make sure that every team member has the exact same version of every tool with the exact same versions.
+
+## Getting started
+
+Open a project folder with Visual Studio Code, create `.devcontainer` folder at the root of the project. Create `devcontainer.json` and `Dockerfile` files in the `.devcontainer` folder.
+
+Basically `devcontainer.json` file is for configuring Visual Studio Code for the project, and `Dockerfile` file is for building the actual development environment with Docker.
+
+Building a _Docker Image_ for _RunTime_ of the project and _DevelopmentTime_ of the project is two different things.
+
+If you're building a _Docker Image_ for the RunTime of the project, you most probably want to make it simpler, smaller, etc. Because _Docker Image_ is related to the performance of the project. You may start one of the smallest, fastest base images, such as, Alpine, etc.
+
+But, if you're building a _Docker Image_ for the DevelopmentTime of the project, you may want to have _all_ of the tools, libraries installed on the image, so you can have a comfortable development experience. You must consider to start one of the common base images, such as, Ubuntu, Debian, etc.
+
