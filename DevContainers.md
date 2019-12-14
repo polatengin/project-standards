@@ -102,6 +102,17 @@ Other than above nodes, we may include following nodes as-well;
 
 You can find other available properties in the full [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)
 
+## Sample Projects with DevContainer Configured
+
+* [.NET Core Sample](https://github.com/Microsoft/vscode-remote-try-dotnetcore)
+* [Node Sample](https://github.com/Microsoft/vscode-remote-try-node)
+* [Python Sample](https://github.com/Microsoft/vscode-remote-try-python)
+* [Go Sample](https://github.com/Microsoft/vscode-remote-try-go)
+* [Java Sample](https://github.com/Microsoft/vscode-remote-try-java)
+* [Rust Sample](https://github.com/microsoft/vscode-remote-try-rust)
+* [C++ Sample](https://github.com/microsoft/vscode-remote-try-cpp)
+* [PHP Sample](https://github.com/microsoft/vscode-remote-try-php)
+
 ## Summary
 
 Using [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack helps to keep development machine clean, also it helps to onboard new people to the project easier.
