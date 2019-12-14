@@ -110,3 +110,14 @@ DevContainer also allows all contributors to work on the project in a standardis
 
 Contributors require less time and guidance to configure their machine for the project, and configuration of the machine causes fewer issues.
 
+## References
+
+[Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
+
+[VS Code Remote Development Container Definitions](https://github.com/microsoft/vscode-dev-containers)
+
+[Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+[devcontainer.json File Reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)
+
+[Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
