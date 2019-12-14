@@ -15,6 +15,7 @@
     "editorconfig.editorconfig",
     "donjayamanne.githistory",
     "eamodio.gitlens",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+    "mutantdino.resourcemonitor"
   ]
 }
