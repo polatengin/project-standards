@@ -23,3 +23,8 @@ RUN apt-get update \
     #
     # [Optional] Add sudo support for the non-root user
     && apt-get install -y sudo \
+    #
+    # Clean up
+    && apt-get autoremove -y \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
