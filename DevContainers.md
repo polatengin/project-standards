@@ -8,3 +8,7 @@ Visual Studio Code (as of from version 1.35) introduced an exciting set of exten
 
 * [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) : Get a Linux-powered development experience from the comfort of Windows by opening any folder in the Windows Subsystem for Linux.
 
+## System Requirements
+
+It's only need to have [Docker](https://hub.docker.com/?overlay=onboarding) , [VS Code](https://code.visualstudio.com/) and [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack, on the machine.
+
