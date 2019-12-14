@@ -10,7 +10,7 @@
 
 ## System Requirements
 
-It's only needed to have [Docker](https://hub.docker.com/?overlay=onboarding) , [VS Code](https://code.visualstudio.com/) and [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack, on the machine.
+It only neededs to have [Docker](https://hub.docker.com/?overlay=onboarding) , [Visual Studio Code](https://code.visualstudio.com/) and [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack, on the machine.
 
 ## Purpose
 
@@ -36,7 +36,7 @@ Onboarding a new team member sometimes requires more than 1 day to make sure tha
 
 This is another problematic area, conflicts between team members' machines.
 
-To overcome this problem, we may have a clean development machine, with only Docker, Visual Studio Code and [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack.
+To overcome this problem, we may have a clean development machine, with only [Docker](https://www.docker.com/), [Visual Studio Code](https://code.visualstudio.com/) and [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack.
 
 Basically, we're using a `Dockerfile` to define our development environment for a project and develop the project inside of this development environment. So, every team member spends only a couple of minutes to build the _Docker Image_ on his/her machine. After that, we can make sure that every team member has the exact same version of every tool with the exact same versions.
 
@@ -44,7 +44,7 @@ Basically, we're using a `Dockerfile` to define our development environment for 
 
 Open a project folder with Visual Studio Code, create `.devcontainer` folder at the root of the project. Create `devcontainer.json` and `Dockerfile` files in the `.devcontainer` folder.
 
-Basically `devcontainer.json` file is for configuring Visual Studio Code for the project, and `Dockerfile` file is for building the actual development environment with Docker.
+Basically, `devcontainer.json` file is for configuring Visual Studio Code for the project, and `Dockerfile` file is for building the actual development environment with Docker.
 
 Building a _Docker Image_ for _RunTime_ of the project and _DevelopmentTime_ of the project is two different things.
 
@@ -80,15 +80,15 @@ Open `devcontainer.json` file, add following structure into it;
 
 `Dockerfile` node is for configuring the name of the _Dockerfile_ which will be used to build the _Docker Image_.
 
-`runArgs` node is for passing some parameters to underlying _Docker Image_, aka _DevContainer_. In this example, we're binding host `docker.sock` file to `docker.sock` file in the _DevContainer_, so we can use [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/) from within the _DevContainer_, but actually it runs the command on the host machine.
+`runArgs` node is for passing some parameters to underlying _Docker Image_, aka _DevContainer_. In this example, we're binding host `docker.sock` file to `docker.sock` file in the _DevContainer_, so we can use [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/) from within the _DevContainer_, but actually, it runs the command on the host machine.
 
 `settings` node is for changing the [Visual Studio Code](https://code.visualstudio.com/) settings only for the opened project. Such as, changing the Terminal shell, changing the Icon Theme, etc.
 
 `extensions` node is for installing extensions for [Visual Studio Code](https://code.visualstudio.com/), only for the opened project. Such as, [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker), [Live Share](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare), [VS Code Icons Theme](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons), [EditorConfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig), etc.
 
-Other than above nodes, we may include following nodes as-well;
+Other than the above nodes, we may include following nodes as-well;
 
-`appPort` node is for exposing ports from _DevContainer_ to host machine. This is useful if you want to access a port from _DevContainer_ from host machine. In the following example it binds port _3000_ from _DevContainer_ to port _3000_ on the host machine.
+`appPort` node is for exposing ports from _DevContainer_ to host machine. This is useful if you want to access a port from _DevContainer_ from the host machine. In the following example, it binds port _3000_ from _DevContainer_ to port _3000_ on the host machine.
 
 ```json
 "appPort": 3000:3000
@@ -104,7 +104,7 @@ You can find other available properties in the full [devcontainer.json reference
 
 ### Configuring Docker Image
 
-You can use an official _Docker Image_ regarding to the projects main architecture, such as, [.Net Core SDK Image](https://hub.docker.com/_/microsoft-dotnet-core-sdk), [Node Image](https://hub.docker.com/_/node/), [Python Image](https://hub.docker.com/_/python/), [PHP Image](https://hub.docker.com/_/php/), [TensorFlow Image](https://hub.docker.com/r/tensorflow/tensorflow/), etc.
+You can use an official _Docker Image_ regarding to the project's main architecture, such as, [.Net Core SDK Image](https://hub.docker.com/_/microsoft-dotnet-core-sdk), [Node Image](https://hub.docker.com/_/node/), [Python Image](https://hub.docker.com/_/python/), [PHP Image](https://hub.docker.com/_/php/), [TensorFlow Image](https://hub.docker.com/r/tensorflow/tensorflow/), etc.
 
 Or you can start with one of the base images which is used heavily by developers, such as, [Ubuntu Image](https://hub.docker.com/_/ubuntu/), [Debian Image](https://hub.docker.com/_/debian/), etc.
 
@@ -190,7 +190,7 @@ git config --global user.email "{EMAIL_ADDRESS}"
 
 Using [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack helps to keep development machine clean, also it helps to onboard new people to the project easier.
 
-_DevContainer_ also allows all contributors to work on the project in a standardised environment.
+_DevContainer_ also allows all contributors to work on the project in a standardized environment.
 
 Contributors require less time and guidance to configure their machine for the project, and configuration of the machine causes fewer issues.
 
