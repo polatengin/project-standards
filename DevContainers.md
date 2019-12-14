@@ -102,6 +102,79 @@ Other than above nodes, we may include following nodes as-well;
 
 You can find other available properties in the full [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)
 
+### Configuring Docker Image
+
+You can use an official _Docker Image_ regarding to the projects main architecture, such as, [.Net Core SDK Image](https://hub.docker.com/_/microsoft-dotnet-core-sdk), [Node Image](https://hub.docker.com/_/node/), [Python Image](https://hub.docker.com/_/python/), [PHP Image](https://hub.docker.com/_/php/), [TensorFlow Image](https://hub.docker.com/r/tensorflow/tensorflow/), etc.
+
+Or you can start with one of the base images which is used heavily by developers, such as, [Ubuntu Image](https://hub.docker.com/_/ubuntu/), [Debian Image](https://hub.docker.com/_/debian/), etc.
+
+You may want to add additional _layers_ to the base image by calling `RUN` commands in the `Dockerfile`, for example;
+
+_Adding .Net Core 3.1 to the base image_:
+
+```bash
+RUN curl -SL --output dotnet.tar.gz https://dotnetcli.azureedge.net/dotnet/Sdk/3.1.100/dotnet-sdk-3.1.100-linux-x64.tar.gz \
+&& mkdir -p /usr/share/dotnet \
+&& tar -ozxf dotnet.tar.gz -C /usr/share/dotnet \
+&& rm dotnet.tar.gz \
+&& ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
+```
+
+_Adding kubectl to the base image_:
+
+```bash
+RUN curl -sL https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - \
+&& echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | tee -a /etc/apt/sources.list.d/kubernetes.list \
+&& apt-get update \
+&& apt-get install -y kubectl
+```
+
+_Adding Azure CLI to the base image_:
+
+```bash
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+```
+
+_Adding Terraform to the base image_:
+
+```bash
+RUN CURR_VER=$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version') \
+&& wget https://releases.hashicorp.com/terraform/${CURR_VER}/terraform_${CURR_VER}_linux_amd64.zip \
+&& unzip terraform_${CURR_VER}_linux_amd64.zip -d /usr/local/bin/ \
+&& rm -rf terraform_${CURR_VER}_linux_amd64.zip
+```
+
+_Adding Helm CLI to the base image_:
+
+```bash
+RUN curl -sL https://git.io/get_helm.sh | bash
+```
+
+At the end of the _Dockerfile_ `CMD` command provides the default to execute in the container, for example, in the following example, _DevContainer_ will use [Bash](https://www.gnu.org/software/bash/) as entrypoint.
+
+```bash
+CMD ["bash"]
+```
+
+We can install [ZSH](https://github.com/ohmyzsh/ohmyzsh) into the _DevContainer_ and set it as entrypoint as-well;
+
+```bash
+RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+
+CMD [ "zsh" ]
+```
+
+### Sharing Git Credentials
+
+[Remote - Containers](https://aka.ms/vscode-remote/download/containers) extension provides out of box support for using local git credentials from inside a container.
+
+If you don't have user name or email address set up locally, you may be prompted to configure it in the _DevContainer_. You can configure username and email address on your local machine by running the following commands;
+
+```bash
+git config --global user.name "{USER_NAME}"
+git config --global user.email "{EMAIL_ADDRESS}"
+```
+
 ## Sample Projects with DevContainer Configured
 
 * [.NET Core Sample](https://github.com/Microsoft/vscode-remote-try-dotnetcore)
