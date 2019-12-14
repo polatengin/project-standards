@@ -52,3 +52,53 @@ If you're building a _Docker Image_ for the RunTime of the project, you most pro
 
 But, if you're building a _Docker Image_ for the DevelopmentTime of the project, you may want to have _all_ of the tools, libraries installed on the image, so you can have a comfortable development experience. You must consider to start one of the common base images, such as, Ubuntu, Debian, etc.
 
+### Configuring Visual Studio Code
+
+Open `devcontainer.json` file, add following structure into it;
+
+```json
+{
+  "name": "Project Development Environment",
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    "-v", "/var/run/docker.sock:/var/run/docker.sock"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "workbench.iconTheme": "vscode-icons"
+  },
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "ms-vsliveshare.vsliveshare",
+    "vscode-icons-team.vscode-icons",
+    "editorconfig.editorconfig"
+  ]
+}
+```
+
+`name` node is for configuring the friendly display name for the dev container.
+
+`Dockerfile` node is for configuring the name of the Dockerfile which will be used to build the Docker Image.
+
+`runArgs` node is for passing some parameters to underlying Docker Image, aka DevContainer. In this example, we're binding host docker.sock file to docker.sock file in the DevContainer, so we can use Docker CLI from within the DevContainer, but actually it runs the command on the host machine.
+
+`settings` node is for changing the Visual Studio Code settings only for the opened project. Such as, changing the Terminal shell, changing the Icon Theme, etc.
+
+`extensions` node is for installing extensions for Visual Studio Code, only for the opened project. Such as, Docker, Live Share, VS Code Icons Theme, EditorConfig, etc.
+
+Other than above nodes, we may include following nodes as-well;
+
+`appPort` node is for exposing ports from DevContainer to host machine. This is useful if you want to access a port from DevContainer from host machine. In the following example it binds port 3000 from DevContainer to port 3000 on the host machine.
+
+```json
+"appPort": 3000:3000
+```
+
+`postCreateCommand` node is for running commands after the container has been created. In the following example, it's installing npm packages after DevContainer created.
+
+```json
+"postCreateCommand": "npm install"
+```
+
+You can find other available properties in the full [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)
+
