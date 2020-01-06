@@ -33,6 +33,11 @@ Also, by default, _Bash_ will tell _Terminal_ window to display `username@comput
 
 If you want to change this pattern you need to change global `PS1` variable.
 
+In the [.bash_profile](./dotfiles/.bash_profile) file, you can find couple of helper methods and exposed `PS1` variable to make it `➜ current_directory_name $`
+
+Other than that, with the helper methods, it can understand if you're in a _git_ folder and parse the current _git branch_.
+
+Also, it can understand if the current _git branch_ has some changes didn't pushed to the repo yet and add `✗` character at the end.
 
 ![Modified Bash Prompt](./bash-1.png "Modified Bash Prompt")
 
