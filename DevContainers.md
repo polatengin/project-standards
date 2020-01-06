@@ -186,6 +186,14 @@ git config --global user.email "{EMAIL_ADDRESS}"
 * [C++ Sample](https://github.com/microsoft/vscode-remote-try-cpp)
 * [PHP Sample](https://github.com/microsoft/vscode-remote-try-php)
 
+## Remote DevContainers
+
+It's required to have more power than we have on our computers in some of the projects, such as, a powerfull GPU for Machine Learning workloads, more RAM for text processing workloads, more CPU for encryption/decryption workloads, etc.
+
+You may have missing some of the hardware requirements as-well, such as, GPU, ARM CPU, etc.
+
+Visual Studio Code and DevContainers extension supports DevContainers running on a remote machine and may leverage hardware resources on remote host.
+
 ## Summary
 
 Using [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack helps to keep development machine clean, also it helps to onboard new people to the project easier.
