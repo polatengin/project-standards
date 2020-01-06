@@ -9,7 +9,7 @@ Thus, the tradition of dot-files was born.
 
 In the .bash_aliases file, you can find some aliases for Bash.
 
-If you wnat to grab your internal or external IP address, every time you need to run following on Terminal
+If you want to grab your _internal_ or _external_ IP address, every time you need to run following commands on _Terminal_
 
 ```bash
 # Internal IP
