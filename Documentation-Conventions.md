@@ -46,3 +46,5 @@ Here is a opiniated check-list for good documentation;
 * Always follow chronological order to create a good documentation. Don't jump between later and prior in time.
 
 * Always read your own documentation before publish it, if it's possible, ask someone else to read it for you and make suggestions to you.
+
+* Always add _References_ section at the end.
