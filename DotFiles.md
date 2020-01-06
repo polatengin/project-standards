@@ -19,7 +19,7 @@ ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}
 dig +short myip.opendns.com @resolver1.opendns.com
 ```
 
-If you want to test your internet speed with 100Mb of file, you can use web pages, such as SpeedTest by Ookla, or you can run following command on Terminal
+If you want to test your internet speed with _100Mb_ of file, you can use web pages, such as [SpeedTest by Ookla](https://www.speedtest.net/), or you can run following command on _Terminal_
 
 ```bash
 wget -O /dev/null http://speed.transip.nl/100mb.bin
