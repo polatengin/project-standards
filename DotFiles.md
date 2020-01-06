@@ -29,6 +29,8 @@ wget -O /dev/null http://speed.transip.nl/100mb.bin
 
 Also, by default, _Bash_ will tell _Terminal_ window to display `username@computername current_directory_from_root$` at the beginning of the command line.
 
+![Default Bash Prompt](./bash-0.png "Default Bash Prompt")
+
 If you want to change this pattern you need to change global `PS1` variable.
 
 In the .bash_profile file, you can find couple of helper methods and exposed PS1 variable to make it `➜ current_directory_name $`
