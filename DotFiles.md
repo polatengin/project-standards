@@ -7,7 +7,7 @@ As a result, any file with a name beginning with '.' was not reported by ls, i.e
 A user's home directory was a convenient place to put user-specific configuration files, but such files were also an eyesore; one popular solution to this problem was to make those configuration files hidden so that they wouldn't annoy the user.  
 Thus, the tradition of dot-files was born.
 
-In the .bash_aliases file, you can find some aliases for Bash.
+In the [.bash_aliases](./dotfiles/.bash_aliases) file, you can find some aliases for _Bash_.
 
 If you want to grab your _internal_ or _external_ IP address, every time you need to run following commands on _Terminal_
 
