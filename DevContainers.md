@@ -194,6 +194,58 @@ You may have missing some of the hardware requirements as-well, such as, GPU, AR
 
 Visual Studio Code and DevContainers extension supports DevContainers running on a remote machine and may leverage hardware resources on remote host.
 
+### Guideline for Remote DevContainers
+
+1. Create an Ubuntu 18.09 VM on Azure
+
+2. [Optional] Configure VM to assign DNS Name
+
+3. Connect VM via SSH
+
+4. On the Remote VM, execute following on Terminal
+
+```bash
+# Update Software Repositories
+sudo apt-get update
+
+# Install Docker
+sudo apt install docker.io
+
+# Start Docker
+sudo systemctl start docker
+
+# Automate Docker
+sudo systemctl enable docker
+```
+
+5. Enable Remote API for Docker by executing following on Terminal
+
+```bash
+# Create missing folder
+mkdir /etc/systemd/system/docker.service.d/
+
+# Change directory to the correct folder
+cd /etc/systemd/system/docker.service.d/
+
+# Create configuration file
+touch startup_options.conf
+
+# Insert configuration into the configuration file
+printf '# /etc/systemd/system/docker.service.d/override.conf\n[Service]\nExecStart=\nExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2376'\n | sudo tee startup_options.conf
+
+# Reload the unit files
+sudo systemctl daemon-reload
+
+# Restart the docker daemon with new startup options
+sudo systemctl restart docker.service
+```
+
+6. [Optional] To test if Remote API for Docker has been successfully enabled, run following on Terminal, you should see empty list `[]` on the Terminal
+
+```bash
+curl http://localhost:2376/images/json
+```
+
 ## Summary
 
 Using [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack helps to keep development machine clean, also it helps to onboard new people to the project easier.
