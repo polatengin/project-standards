@@ -25,7 +25,8 @@ If you want to test your internet speed with _100Mb_ of file, you can use web pa
 wget -O /dev/null http://speed.transip.nl/100mb.bin
 ```
 
-Also, by default, Bash will tell Terminal window to display `username@computername current_directory_from_root $` at the beginning of the command line.
+![SpeedTest Screenshot](./speedtest.gif "SpeedTest Screenshot")
+
 
 If you want to change this pattern you need to change global `PS1` variable.
 
