@@ -27,6 +27,7 @@ wget -O /dev/null http://speed.transip.nl/100mb.bin
 
 ![SpeedTest Screenshot](./speedtest.gif "SpeedTest Screenshot")
 
+Also, by default, _Bash_ will tell _Terminal_ window to display `username@computername current_directory_from_root$` at the beginning of the command line.
 
 If you want to change this pattern you need to change global `PS1` variable.
 
