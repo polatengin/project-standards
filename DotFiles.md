@@ -41,7 +41,8 @@ Also, it can understand if the current _git branch_ has some changes didn't push
 
 ![Modified Bash Prompt](./bash-1.png "Modified Bash Prompt")
 
+## References
 
-Other than that, with the helper methods, it can understand if you're in a Git folder and parse the current git branch
+[What are dotfiles](https://www.quora.com/What-are-dotfiles)
 
-Also, it can understand if the current git branch has some changes didn't pushed to the repo yet and add ✗ character at the end.
+[Git Status Documentation](https://git-scm.com/docs/git-status)
