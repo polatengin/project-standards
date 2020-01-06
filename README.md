@@ -8,7 +8,7 @@ Opinionated standards for projects, such as, Naming Conventions, Best Practices,
 
 [Pre Planning - ADS - Planning meetings/phases of the project](./PrePlanning-ADS-Planning.md)
 
-[DevContainers](./DevContainers.md)
+[DevContainers and Remote DevContainers](./DevContainers.md)
 
 [Naming conventions for Azure resources](./Naming-Conventions-Azure-Resources.md)
 
