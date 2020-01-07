@@ -118,7 +118,7 @@ sum() {
 }
 ```
 
-# Parameters
+## Parameters
 
 If a _Bash_ script requires parameters to run, always check if those parameters are set.
 
