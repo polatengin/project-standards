@@ -191,14 +191,14 @@ bash -x myscript.sh
 
 ## References
 
-https://google.github.io/styleguide/shell.xml
+[Shell Style Guide](https://google.github.io/styleguide/shell.xml)
 
-http://guide.bash.academy/
+[The Bash Guide](http://guide.bash.academy/)
 
-http://www.tldp.org/LDP/abs/html/
+[Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html/)
 
-https://www.gnu.org/software/bash/manual/bashref.html
+[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bashref.html)
 
-https://www.ibm.com/developerworks/library/l-linux-shells/
+[Evolution of shells in Linux](https://www.ibm.com/developerworks/library/l-linux-shells/)
 
-https://github.com/dylanaraps/pure-bash-bible
+[Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible)
