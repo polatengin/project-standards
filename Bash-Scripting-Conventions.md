@@ -1,5 +1,7 @@
 # Bash Scripting Conventions
 
+![Bash Scripting Conventions](./title-bash-scripting-conventions.png "Bash Scripting Conventions")
+
 Here is the opinionated conventions for Bash Scripts
 
 ## Bash script file
