@@ -1,6 +1,6 @@
 # Terraform - ARM Template - Azure CLI Comparison
 
-Here is the opinianated list of differences of resource provisioning tools
+Here is the opinionated list of differences of resource provisioning tools
 
 ## Terraform
 
