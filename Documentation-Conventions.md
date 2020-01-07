@@ -1,5 +1,7 @@
 # Documentation Conventions
 
+![Documentation Conventions](./title-documentation-conventions.png "Documentation Conventions")
+
 Especially big and complex projects, documentation is crucial.
 
 There are good phrases in [Zen of Python](https://www.python.org/dev/peps/pep-0020/#the-zen-of-python);
