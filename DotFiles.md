@@ -1,5 +1,7 @@
 # What are DotFiles
 
+![DotFiles](./title-dotfiles.png "DotFiles")
+
 *DotFiles* (files with dot `.` at the beginning of their names, such as, *.bash_aliases*, *.bash_profile*, etc.) are basically text-based configuration files.
 
 > The legend goes that dot-files arose from a bug in the earliest days of UNIX: in an effort to avoid listing the . and .. entries of a directory, the ls command skipped files that began with the '.' character.  
