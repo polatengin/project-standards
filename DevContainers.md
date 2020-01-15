@@ -202,7 +202,10 @@ Visual Studio Code and DevContainers extension supports DevContainers running on
 
 3. Connect VM via SSH
 
-4. On the Remote VM, execute following on Terminal
+```bash
+ssh user@<ip-address-or-hostname>
+```
+
 
 ```bash
 # Update Software Repositories
