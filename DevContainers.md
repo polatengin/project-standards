@@ -196,9 +196,9 @@ Visual Studio Code and DevContainers extension supports DevContainers running on
 
 ### Guideline for Remote DevContainers
 
-1. Create an Ubuntu 18.09 VM on Azure
+1. Create an _Ubuntu 18.09_ VM on [Azure Portal](https://portal.azure.com)
 
-2. [Optional] Configure VM to assign DNS Name
+2. _[Optional]_ Configure VM to assign DNS Name
 
 3. Connect VM via SSH
 
