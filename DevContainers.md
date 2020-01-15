@@ -250,6 +250,24 @@ sudo systemctl restart docker.service
 curl http://localhost:2376/images/json
 ```
 
+7. Create an SSH tunnel by executing following command
+
+```bash
+ssh -NL localhost:9997:localhost:2376 user@<ip-address-or-hostname>
+```
+
+8. Create an environment variable named `DOCKER_HOST` pointing to the tunnel
+
+```bash
+setx DOCKER_HOST tcp://localhost:9997
+```
+
+9. _[Optional]_ To test if the SSH tunnel is working, open a new Terminal and execute following command to verify that the returned message does not contain errors
+
+```bash
+docker version
+```
+
 ## Summary
 
 Using [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension pack helps to keep development machine clean, also it helps to onboard new people to the project easier.
