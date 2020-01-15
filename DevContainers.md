@@ -206,6 +206,7 @@ Visual Studio Code and DevContainers extension supports DevContainers running on
 ssh user@<ip-address-or-hostname>
 ```
 
+4. On the Remote VM, execute following command
 
 ```bash
 # Update Software Repositories
@@ -221,7 +222,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-5. Enable Remote API for Docker by executing following on Terminal
+5. Enable _Remote API for Docker_ by executing following command on Terminal
 
 ```bash
 # Create missing folder
