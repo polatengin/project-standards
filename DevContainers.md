@@ -222,7 +222,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-5. Enable _Remote API for Docker_ by executing following command on Terminal
+5. Enable [Remote API for Docker](https://success.docker.com/article/how-do-i-enable-the-remote-api-for-dockerd) by executing following command on Terminal
 
 ```bash
 # Create missing folder
