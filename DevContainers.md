@@ -244,7 +244,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker.service
 ```
 
-6. [Optional] To test if Remote API for Docker has been successfully enabled, run following on Terminal, you should see empty list `[]` on the Terminal
+6. _[Optional]_ To test if _Remote API for Docker_ has been successfully enabled, run following command on Terminal, you should get empty list `[]` as result
 
 ```bash
 curl http://localhost:2376/images/json
