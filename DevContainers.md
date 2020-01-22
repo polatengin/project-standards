@@ -177,6 +177,18 @@ git config --global user.name "{USER_NAME}"
 git config --global user.email "{EMAIL_ADDRESS}"
 ```
 
+## Openning a Git Repository in DevContainer (AdHoc way)
+
+Open a clean [Visual Studio Code](https://code.visualstudio.com/) instance, hit `F1` and type '_Open Repository in Container..._'
+
+When [Visual Studio Code](https://code.visualstudio.com/) asks, enter the following information;
+
+* Address of the repository (for example, `polatengin/project-standards` to open this repository in a _DevContainer_)
+* VolumeName of the Docker Container
+* Name of the folder to clone the repository into the Docker Container
+
+After couple of minutes, [Visual Studio Code](https://code.visualstudio.com/) should be ready, you should be able to see the files from the cloned repository, also, all the extensions should be installed.
+
 ## Sample Projects with DevContainer Configured
 
 * [.NET Core Sample](https://github.com/Microsoft/vscode-remote-try-dotnetcore)
