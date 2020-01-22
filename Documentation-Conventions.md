@@ -13,7 +13,7 @@ Documentation should be _descriptive_, _easy to understand_, _applicable_ and sh
 
 Since good documentation is important, there should be some _guideline_ or _check-list_ to make sure that the documentation is good 😀
 
-Here is a opinionated _check-list_ for good documentation;
+Here is an opinionated _check-list_ for good documentation;
 
 * Documentation should be in a universal format, such as, _Markdown_, _Microsoft Word_, _Microsoft Powerpoint_, etc.
 
@@ -21,7 +21,7 @@ Here is a opinionated _check-list_ for good documentation;
 
 * If it's possible, use [Visual Studio Code](https://code.visualstudio.com/) to create documentation.
 
-* Use [Markdown Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) extension on [Visual Studio Code](https://code.visualstudio.com/) to check _Markdown_ errors before save the document.
+* Use [Markdown Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) extension on [Visual Studio Code](https://code.visualstudio.com/) to check _Markdown_ errors before saving the document.
 
 * If you're using _Markdown_, always use _Markdown_ syntax, don't mix it with _HTML_ or other syntaxes.
 
@@ -29,7 +29,7 @@ Here is a opinionated _check-list_ for good documentation;
 
 * Use smaller headings after the _Main Headline_ (biggest heading).
 
-* Use headings to create _Table of Contents_.
+* Use headings to create a _Table of Contents_.
 
 * Use [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc) extension time-to-time to check if the headings are in correct size or not.
 
@@ -49,4 +49,4 @@ Here is a opinionated _check-list_ for good documentation;
 
 * Always read your own documentation before publish it, if it's possible, ask someone else to read it for you and make suggestions to you.
 
-* Always add _References_ section at the end.
+* Always add a _References_ section at the end.
