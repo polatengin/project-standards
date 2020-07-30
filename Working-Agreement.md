@@ -21,3 +21,10 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 - Sprint planning, Sprint demo, Retrospectives and Daily Standup should always happen at the same time every week
 - All meetings should have a time keeper to ensure the meeting doesn't overrun
 - If you cannot attend one of the meetings, try to let the team know at least 15 minutes in advance
+
+## Standups
+
+- Starts on time and it should not take longer than the pre-agreed time
+- Format: What did I do yesterday? What will I do today? Any blockers?
+- Any in-depth discussion should be taken offline
+- Everyone should try to attend standups daily, but if not possible send an offline message on Teams with your status update
