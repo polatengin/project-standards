@@ -10,3 +10,6 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 - No expectations to work late in the night or over the weekend
 - Be respectful of timezones and team members' working schedule
 
+## Sprint Week
+
+- The sprint starts on Thursdays and Ends on Wednesdays with Demos, Retrospective and Sprint Planning
