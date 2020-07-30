@@ -40,3 +40,14 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 - Demos are done on Wednesdays as part of the end of the sprint
 - Demos should be announced to the scrum master the day before the demo
 - Demos are strictly time boxed and should focus on informing the team or demoing acceptance criteria for User Stories
+
+## Sprint Planning
+
+- Sprint Planning involves the whole team, with Product Owners as mandatory
+- Before Sprint Planning, everyone should add their capacity to the sprint.
+- The User Stories that were not finished in the previous sprint are moved to the next sprint or backlog as appropriate. Remaining time for the tasks is estimated and any new tasks needed are added and estimated.
+- The top prioritized new User Stories are defined with Acceptance Criteria
+- Each of the potential User Stories are split into an initial set of tasks and the tasks are estimated. (some prep may be done before to speed things up)
+- User Stories are added to the next sprint until capacity is met.
+- Split each dev task in the story into 3 (Research, Implementation, Review). This doesn't apply if you felt the task is too short.
+- Main goals: 1. something working and 2. ability of recreating it independently (documentation on this project is highly important).
