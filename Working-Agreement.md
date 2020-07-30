@@ -34,3 +34,9 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 - Retrospectives are set to Wednesdays
 - Everyone should give 4 votes to the available retro groups before the Retro
 - Discussion about each entry is time boxed - 3 to 4 minutes
+
+## Demos
+
+- Demos are done on Wednesdays as part of the end of the sprint
+- Demos should be announced to the scrum master the day before the demo
+- Demos are strictly time boxed and should focus on informing the team or demoing acceptance criteria for User Stories
