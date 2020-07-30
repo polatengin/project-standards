@@ -51,3 +51,17 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 - User Stories are added to the next sprint until capacity is met.
 - Split each dev task in the story into 3 (Research, Implementation, Review). This doesn't apply if you felt the task is too short.
 - Main goals: 1. something working and 2. ability of recreating it independently (documentation on this project is highly important).
+
+## Backlog
+
+- Tasks should have a time estimate from the following options: 1h, 2h, 5h, 8h or 13h
+- If multiple team members are pair programming on a taks, create as many tasks on the board as there are team members and mark them as copies of each other
+- Tasks should not have estimates bigger than 13h (or 2 working days) -> if this is the case, try to split it into two separate tasks
+- Estimate 6 coding hours/day per team member
+- Items in "New" should not be assigned to anyone -> a new task should be picked up and set to "Active" by a team member when they finished their last active task and they estimate they have time to work on it
+- If you are no longer working on a task, move it back to unassigned
+- Anything you work on related to the project should be captured in a task
+- If you are not available to work on tasks related to the project, this should be reflected in the availability for the sprint
+- Create a PR for each completed task if appropriate
+- Update README along the way
+- Pair programing, so when someone is not available, the team is not blocked, it doesn't have to be 1 MS and 1 D3, it could be 2 MS or 2 D3 as well.
