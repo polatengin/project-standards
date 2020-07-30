@@ -13,3 +13,11 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 ## Sprint Week
 
 - The sprint starts on Thursdays and Ends on Wednesdays with Demos, Retrospective and Sprint Planning
+
+## Meetings
+
+- All meetings should have an agenda and a clearly communicated objective
+- All meetings should be planned at least a few days in advance
+- Sprint planning, Sprint demo, Retrospectives and Daily Standup should always happen at the same time every week
+- All meetings should have a time keeper to ensure the meeting doesn't overrun
+- If you cannot attend one of the meetings, try to let the team know at least 15 minutes in advance
