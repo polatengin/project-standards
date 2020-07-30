@@ -28,3 +28,9 @@ We are all one team. We all discuss and make decisions that impact us all as a t
 - Format: What did I do yesterday? What will I do today? Any blockers?
 - Any in-depth discussion should be taken offline
 - Everyone should try to attend standups daily, but if not possible send an offline message on Teams with your status update
+
+## Retrospectives
+
+- Retrospectives are set to Wednesdays
+- Everyone should give 4 votes to the available retro groups before the Retro
+- Discussion about each entry is time boxed - 3 to 4 minutes
