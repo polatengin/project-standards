@@ -12,7 +12,7 @@ Opinionated standards for projects, such as, Naming Conventions, Best Practices,
 
 [Naming conventions for Azure resources](./Naming-Conventions-Azure-Resources.md)
 
-[Tagging Best Practices](Tagging-Best-Practices.md)
+[Tagging Best Practices](./Tagging-Best-Practices.md)
 
 [Dot Files](./DotFiles.md)
 
