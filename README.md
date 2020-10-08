@@ -14,6 +14,6 @@ Opinionated standards for projects, such as, Naming Conventions, Best Practices,
 
 [Tagging Best Practices](./Tagging-Best-Practices.md)
 
-[Dot Files](./DotFiles.md)
+[Dot Files](https://github.com/polatengin/dotfiles)
 
 [Documentation Conventions](./Documentation-Conventions.md)
